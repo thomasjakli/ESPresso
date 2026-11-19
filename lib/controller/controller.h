@@ -24,17 +24,17 @@ struct ActuatorCommands {
 };
 
 class Controller {
-public:
+  public:
     explicit Controller(ControllerTime maximum_sample_age);
 
     // Both timestamps must come from the same monotonic clock.
-    void update(ControllerTime now, const ControllerInputs& inputs);
+    void update(ControllerTime now, const ControllerInputs &inputs);
     ActuatorCommands commands() const;
 
-private:
+  private:
     ControllerTime maximum_sample_age_;
     bool fault_latched_ = false;
     ActuatorCommands commands_{};
 };
 
-}  // namespace espresso
+} // namespace espresso
