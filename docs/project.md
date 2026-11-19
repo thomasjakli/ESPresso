@@ -8,7 +8,7 @@ Install PlatformIO Core and a host C and C++ toolchain with C++17 support. Run f
 pio test -e native
 ```
 
-The tests use a fake clock to check startup commands, temperature sample validity and freshness, and fault latching.
+The tests use a fake clock to check startup commands, temperature sample validity and freshness, and fault latching. The [Native tests workflow](../.github/workflows/native-tests.yml) runs the same command on every pull request.
 
 ## Markdown linting
 
