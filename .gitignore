@@ -1,0 +1,17 @@
+# PlatformIO build output and exported firmware
+/.pio/
+firmware.bin
+
+# Local IDE caches
+/.idea/
+/.vscode/.browse.c_cpp.db*
+/.vscode/ipch/
+
+# Local Python environments and caches
+/.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Markdown lint dependencies
+/node_modules/
