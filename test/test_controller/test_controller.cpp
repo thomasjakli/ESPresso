@@ -14,9 +14,7 @@ constexpr auto sample_timeout = 100ms;
 struct FakeClock {
     ControllerTime now{};
 
-    void advance(ControllerTime elapsed) {
-        now += elapsed;
-    }
+    void advance(ControllerTime elapsed) { now += elapsed; }
 };
 
 void test_startup_commands_both_outputs_off() {
@@ -101,7 +99,7 @@ void test_fault_shuts_off_both_outputs_and_stays_latched() {
     TEST_ASSERT_FALSE(controller.commands().pump_on);
 }
 
-}  // namespace
+} // namespace
 
 void setUp() {}
 void tearDown() {}
